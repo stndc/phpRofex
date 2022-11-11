@@ -16,6 +16,6 @@ composer
 
 Para usar la biblioteca, debe tener las credenciales de autenticación correctas para el entorno.
 
-Para obtener nuevas credenciales vaya al sitio web de [https://remarkets.primary.ventures](Remarket) y cree una cuenta de forma gratuita.
+Para obtener nuevas credenciales vaya al sitio web de [Remarket](https://remarkets.primary.ventures) y cree una cuenta de forma gratuita.
 
 Póngase en contacto con el equipo de MPI (Market and Platform Integration), mpi@primary.com.ar
