@@ -22,7 +22,18 @@ Para obtener nuevas credenciales vaya al sitio web de [Remarket](https://remarke
 
 Póngase en contacto con el equipo de MPI (Market and Platform Integration), mpi@primary.com.ar
 
+## Método
+
+El método retorna un diccionario `JSON`.
+
+- get_marketdata($url): obtiene Segementos, Instrumentos, Órdenes y Market Data.
+
+
 ## Modo de uso
+
+La inicialización se debe realizar en dos pasos. En el primer paso se autentifica con servidor de Matba Rofex por medio usuario y contraseña y el segundo paso es pasar los datos que necesita obtener al método `get_marketdata($url)` en su parámetro `$url`.
+
+Si la autenticación falla, la propiedad status del callback será “ERROR”.
 
 ```
 namespace Api;
@@ -30,17 +41,9 @@ namespace Api;
 require __DIR__ . '/vendor/autoload.php';
 
 use Api\ApiRofex;
-```
 
-## Metodos
-
-El objeto `ApiRofex` debe devolver dos parametros; usuario y contraseña.
-
-```
 $rofex = new ApiRofex('X-Username','X-password');
 ```
-
-Obtenido el objeto, la función `get_marketdata($url)` devulvá un diccionario `JSON`.
 
 ## Ejemplo
 
