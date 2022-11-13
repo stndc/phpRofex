@@ -1,0 +1,16 @@
+{
+	"name": "stndc/phprofex",
+	"description": "phpRofex es un paquete de PHP que permite interacciones con las API Rest de Matba Rofex",
+	"minimum-stability": "stable",
+	"type": "project",
+	"homepage": "https://github.com/stndc/phpRofex",
+	"license": "proprietary",
+	"support": {
+		"email": "stn_dc@protonmail.com"
+	},
+	"autoload": {
+		"psr-4": {
+			"Api\\" : "Api/"
+		}
+	}
+}

@@ -19,3 +19,19 @@ Para usar la biblioteca, debe tener las credenciales de autenticación correctas
 Para obtener nuevas credenciales vaya al sitio web de [Remarket](https://remarkets.primary.ventures) y cree una cuenta de forma gratuita.
 
 Póngase en contacto con el equipo de MPI (Market and Platform Integration), mpi@primary.com.ar
+
+## Modo de uso
+
+```
+require_once 'vendor/autoload.php';
+
+$rofex = new Rofex('X-Username','X-password');
+```
+
+## Metodos
+
+Todos los retornos devulven un diccionario `JSON`.
+
+
+La funcion `get_marketdata($url)`    
+
