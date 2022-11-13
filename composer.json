@@ -2,7 +2,7 @@
 	"name": "stndc/phprofex",
 	"description": "phpRofex es un paquete de PHP que permite interacciones con las API Rest de Matba Rofex",
 	"minimum-stability": "stable",
-	"type": "project",
+	"type": "library",
 	"homepage": "https://github.com/stndc/phpRofex",
 	"license": "proprietary",
 	"support": {
