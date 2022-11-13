@@ -8,8 +8,10 @@ Puede leer la documentación oficial de la API para familiarizarse con las respu
 
 ## Instalación
 
+Instalar con [Composer](https://getcomposer.org/).
+
 ```
-composer
+composer require stndc/phprofex
 ```
 
 ## Credenciales API
@@ -23,15 +25,39 @@ Póngase en contacto con el equipo de MPI (Market and Platform Integration), mpi
 ## Modo de uso
 
 ```
-require_once 'vendor/autoload.php';
+namespace Api;
 
-$rofex = new Rofex('X-Username','X-password');
+require __DIR__ . '/vendor/autoload.php';
+
+use Api\ApiRofex;
 ```
 
 ## Metodos
 
-Todos los retornos devulven un diccionario `JSON`.
+El objeto `ApiRofex` debe devolver dos parametros; usuario y contraseña.
 
+```
+$rofex = new ApiRofex('X-Username','X-password');
+```
 
-La funcion `get_marketdata($url)`    
+Obtenido el objeto, la función `get_marketdata($url)` devulvá un diccionario `JSON`.
 
+## Ejemplo
+
+```
+<?php
+
+namespace Api;
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Api\ApiRofex;
+
+$rofex = new ApiRofex('infoinnobite7580','oarndD7$');
+
+$instruments = $rofex->get_marketdata('https://api.remarkets.primary.com.ar/rest/instruments/all');
+
+var_dump($instruments);
+
+?>
+```
