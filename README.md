@@ -8,10 +8,14 @@ Puede leer la documentación oficial de la API para familiarizarse con las respu
 
 ## Instalación
 
-Instalar con [Composer](https://getcomposer.org/).
+```
+git clone https://github.com/stndc/phpRofex.git
+```
+
+Dentro de phpRofex instalar [Composer](https://getcomposer.org/).
 
 ```
-composer require stndc/phprofex
+composer install
 ```
 
 ## Credenciales API
