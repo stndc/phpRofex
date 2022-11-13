@@ -53,7 +53,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Api\ApiRofex;
 
-$rofex = new ApiRofex('infoinnobite7580','oarndD7$');
+$rofex = new ApiRofex('XXXXXXXXXXX','XXXXXXXXXXX');
 
 $instruments = $rofex->get_marketdata('https://api.remarkets.primary.com.ar/rest/instruments/all');
 
