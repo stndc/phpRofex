@@ -1,4 +1,4 @@
-# Documentación phpRofex <img src='https://raw.githubusercontent.com/matbarofex/rRofex/master/man/figures/logo.png' align="right" width="139px"/>
+# Documentación phpRofex 
 
 phpRofex es un paquete de PHP que permite interacciones con las API Rest de Matba Rofex.
 
