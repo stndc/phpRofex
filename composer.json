@@ -4,7 +4,7 @@
 	"minimum-stability": "stable",
 	"type": "library",
 	"homepage": "https://github.com/stndc/phpRofex",
-	"license": "proprietary",
+	"license": "MIT",
 	"support": {
 		"email": "stn_dc@protonmail.com"
 	},
