@@ -2,7 +2,7 @@
 	"name": "phprofex/phprofex",
 	"license": "MIT",
 	"description": "phpRofex es un paquete de PHP que permite interacciones con las API Rest de Matba Rofex",
-	"minimum-stability": "stable",
+	"minimum-stability": "dev",
 	"homepage": "https://github.com/stndc/phpRofex",
 	"type": "library",
 	"require": {
