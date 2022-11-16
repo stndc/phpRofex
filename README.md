@@ -1,6 +1,6 @@
 # Documentación phpRofex 
 
-phpRofex es un paquete de PHP que permite interacciones con las API Rest de Matba Rofex.
+phpRofex es una librería de PHP que permite interacciones con las API Rest de Matba Rofex.
 
 La librería está diseñada para evitar a los desarrolladores las horas de investigación y codificación necesarias para conectarse con las API de ROFEX, de modo que puedan concentrarse en la parte importante de su software.
 
@@ -34,7 +34,7 @@ El método retorna un diccionario `JSON`.
 
 ## Modo de uso
 
-La inicialización se debe realizar en dos pasos. En el primer paso se autentifica con servidor de Matba Rofex por medio usuario y contraseña y el segundo paso es pasar los datos que necesita obtener al método `get_marketdata($url)` en su parámetro `$url`.
+La inicialización se debe realizar en dos pasos. En el primer paso se autentifica con el servidor de Matba Rofex por medio de usuario y contraseña. El segundo paso es pasar los datos que necesita obtener al método `get_marketdata($url)` en su parámetro `$url`.
 
 Si la autenticación falla, la propiedad status del callback será “ERROR”.
 
@@ -66,7 +66,6 @@ $rofex = new ApiRofex('XXXXXXXXXXX','XXXXXXXXXXX');
 $instruments = $rofex->get_marketdata('https://api.remarkets.primary.com.ar/rest/instruments/all');
 
 var_dump($instruments);
-
 ```
 
 ## Importante:
