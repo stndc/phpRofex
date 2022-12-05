@@ -12,7 +12,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Api\ApiRofex;
 
-$rofex = new ApiRofex('infoinnobite7580','oarndD7$');
+$rofex = new ApiRofex('X-Username','X-password');
 $marketdata = $rofex->get_marketdata('https://api.remarkets.primary.com.ar/rest/marketdata/get?marketId=ROFX&symbol=SOJ.ROS/MAR23&entries=CL');
 $data = json_decode($marketdata);
 
