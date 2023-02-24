@@ -5,7 +5,8 @@
 	"homepage": "https://github.com/stndc/phpRofex",
 	"type": "library",
 	"require": {
-		"php": ">=8.0"
+		"php": ">=8.0",
+		"cboden/ratchet": "^0.4.4"
 	},
 	"minimum-stability": "stable",
 	"authors": [
