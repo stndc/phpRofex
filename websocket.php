@@ -6,8 +6,10 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Api\ApiRofex;
 
+require_once 'keys.php';
+
 // object with API key
-$rofex = new ApiRofex('infoinnobite7580','oarndD7$');
+$rofex = new ApiRofex(USER, PASS);
 
 $add_token = $rofex->get_token('https://api.remarkets.primary.com.ar/auth/getToken');
 
@@ -57,7 +59,18 @@ $in = "GET /websocket/path HTTP/1.1\r\n" .
        $headers .
        "\r\n";
 
-$in .= '{"type":"smd","level":1, "entries":["BI", "OF"],"products":[{"symbol":"SOJ.ROS/MAY23","marketId":"ROFX"}]}';
+$in .= '{
+            "type":"smd","level":1,
+            "entries":[
+                "BI",
+                "OF"
+            ],
+            "products":[
+                {
+                    "symbol":"SOJ.ROS/MAY23",
+                    "marketId":"ROFX"}
+                ]
+            }';
 
 echo "Enviando petición WSS HEAD ...";
 

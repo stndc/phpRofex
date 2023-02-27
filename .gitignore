@@ -2,3 +2,4 @@
 *.lock
 testing.php
 data.php
+keys.php
