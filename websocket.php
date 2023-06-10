@@ -21,7 +21,7 @@ $token = substr($explode[9], 0, -17);
 var_dump($token);
 $symbol = 'SOJ.ROS/MAY23'; */
 
-$url = 'wss.remarkets.primary.com.ar';
+$url = 'wss://api.remarkets.primary.com.ar';
 
 error_reporting(E_ALL);
 
@@ -59,18 +59,7 @@ $in = "GET /websocket/path HTTP/1.1\r\n" .
        $headers .
        "\r\n";
 
-$in .= '{
-            "type":"smd","level":1,
-            "entries":[
-                "BI",
-                "OF"
-            ],
-            "products":[
-                {
-                    "symbol":"SOJ.ROS/MAY23",
-                    "marketId":"ROFX"}
-                ]
-            }';
+$in .= '{"type":"smd","level":1,"entries":["BI","OF"],"products":[{"symbol":"SOJ.ROS/MAY23","marketId":"ROFX"}]}';
 
 echo "Enviando petición WSS HEAD ...";
 
@@ -86,7 +75,9 @@ while ($out = socket_read($socket, 204800)) {
     echo $out;
 }
 echo "Cerrando socket...";
+
 socket_close($socket);
+
 echo "OK.\n\n";
 
 ?>

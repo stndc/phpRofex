@@ -1,5 +1,7 @@
 /vendor
+/websocket
 *.lock
 testing.php
 data.php
 keys.php
+websocket.php
